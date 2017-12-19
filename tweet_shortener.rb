@@ -45,3 +45,16 @@ def bulk_tweet_shortener(array)
       word_substituter(str)
     end
     end
+
+    def shortened_tweet_truncator(str)
+  if str.length<140
+    str
+  else
+    final = word_substituter(str)
+    if final.length<140
+      final
+    else
+      final[0..10]+"..."
+    end
+  end
+end
