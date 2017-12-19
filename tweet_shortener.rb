@@ -54,7 +54,7 @@ def bulk_tweet_shortener(array)
     if final.length<140
       final
     else
-      final
+      final[0..140]+"..."
     end
   end
 end
